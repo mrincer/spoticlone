@@ -10,6 +10,7 @@ const scopes = [
     "user-modify-playback-state",
 ];
 
+//Recu=ducing function and URI decoding
 export const getTokenFromUrl = () => {
     return window.location.hash
     .substring(1)
