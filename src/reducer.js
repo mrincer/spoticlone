@@ -25,6 +25,11 @@ const reducer = (state, action) => {
                 ...state,
                 playlists: action.playlists,
             };
+        case 'SET_PLAYLIST_RAP':
+            return{
+                ...state,
+                rap_playlist: action.rap_playlist,
+            }
         default:
             return state;
     }

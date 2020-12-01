@@ -44,6 +44,13 @@ function App() {
         });
       });
 
+      spotify.getPlaylist('4ExmYCMaTdEUMGTq9bNR5Q').then((response) => {
+        dispatch({
+          type: 'SET_PLAYLIST_RAP',
+          rap_playlist: response,
+        })
+      })
+
 
       console.log(user, token);
     }
